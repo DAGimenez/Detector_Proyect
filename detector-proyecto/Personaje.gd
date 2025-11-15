@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+var SPEED = 300.0
 
 
 
@@ -18,8 +18,11 @@ func _physics_process(delta: float) -> void:
 			direction.y -=1
 		if Input.is_action_pressed("vi_down"):
 			direction.y += 1
-			
-			
+		if Input.is_action_just_pressed("vi_shift"):
+			SPEED= 400.0
+		if Input.is_action_just_released ("vi_shift"):
+			SPEED= 300.0
+		
 
 
 #con esto normalizamos la velocidad en diagonal

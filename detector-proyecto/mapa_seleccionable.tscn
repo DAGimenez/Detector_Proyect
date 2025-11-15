@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://btch27b6fyoq0"]
+
+[ext_resource type="Texture2D" uid="uid://bf6tqyn725mty" path="res://Imagenes/ChatGPT Image 14 nov 2025, 22_26_32.png" id="1_fequv"]
+[ext_resource type="Script" uid="uid://dimpmk18u3nrl" path="res://provincia_1.gd" id="2_bapai"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fequv"]
+radius = 27.018513
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bapai"]
+
+[node name="mapa_seleccionable" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(591, 331.00003)
+scale = Vector2(1.1086881, 0.59399736)
+texture = ExtResource("1_fequv")
+metadata/_edit_group_ = true
+
+[node name="provincia1" type="Area2D" parent="."]
+script = ExtResource("2_bapai")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="provincia1"]
+position = Vector2(475, 530)
+shape = SubResource("CircleShape2D_fequv")
+debug_color = Color(0.8352941, 0.12156863, 0.015686275, 0.41960785)
+
+[node name="provincia2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="provincia2"]
+position = Vector2(502, 422)
+scale = Vector2(2.4489536, 1.591174)
+shape = SubResource("CircleShape2D_bapai")
+debug_color = Color(0.9101435, 0, 0.11040913, 0.49803922)
