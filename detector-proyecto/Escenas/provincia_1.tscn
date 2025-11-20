@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://die70nskfae7y"]
 
 [ext_resource type="Texture2D" uid="uid://d3am7fkxav3ay" path="res://Imagenes/9b2ba700-d8db-4a90-9e35-aebdd1968139.png" id="1_b8m72"]
-[ext_resource type="PackedScene" uid="uid://c6c6hp2pisqlr" path="res://Personaje.tscn" id="2_217so"]
+[ext_resource type="PackedScene" uid="uid://c6c6hp2pisqlr" path="res://Escenas/Personaje.tscn" id="2_217so"]
 
 [node name="Provincia_1" type="Control"]
 layout_mode = 3
