@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cesjayvjd4job" path="res://Personaje.gd" id="1_48aib"]
 [ext_resource type="Texture2D" uid="uid://cgbn3psjyemuc" path="res://icon.svg" id="2_47rpa"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Personaje" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(72, 95)

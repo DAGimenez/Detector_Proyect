@@ -26,4 +26,13 @@ offset_right = 464.0
 offset_bottom = 525.0
 scale = Vector2(4.717604, 2.7506812)
 
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 482.0
+offset_top = 413.00003
+offset_right = 490.0
+offset_bottom = 421.00003
+scale = Vector2(4.474144, 2.600948)
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
