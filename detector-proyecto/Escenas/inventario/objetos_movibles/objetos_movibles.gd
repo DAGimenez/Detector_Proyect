@@ -7,6 +7,7 @@ var offset := Vector2.ZERO
 # Referencia al nodo que está por encima de todo
 @onready var canvas_layer = get_viewport().get_node("mochila/inventario") 
 
+
 func _gui_input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed:
