@@ -1,8 +1,12 @@
-[gd_scene format=3 uid="uid://c5xahx17caxpv"]
+[gd_scene load_steps=3 format=3 uid="uid://c5xahx17caxpv"]
+
+[ext_resource type="Script" uid="uid://clgjsj3mfny3m" path="res://Escenas/inventario/mochila.gd" id="1_ab3fh"]
+[ext_resource type="PackedScene" uid="uid://bmgu7ey3ebwlr" path="res://Escenas/inventario/objetos_movibles/objetos_movibles.tscn" id="2_xib3d"]
 
 [node name="mochila" type="CanvasLayer"]
+script = ExtResource("1_ab3fh")
 
-[node name="inventario" type="Control" parent="."]
+[node name="inventario" type="Control" parent="." groups=["inventario"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,338 +29,344 @@ theme_override_constants/margin_bottom = 10
 [node name="VBoxContainer" type="VBoxContainer" parent="inventario/MarginContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="inventario/MarginContainer/VBoxContainer"]
+[node name="grillas" type="HBoxContainer" parent="inventario/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 510)
 layout_mode = 2
 
-[node name="movibles" type="GridContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="movibles" type="GridContainer" parent="inventario/MarginContainer/VBoxContainer/grillas"]
 layout_mode = 2
 size_flags_horizontal = 2
 size_flags_vertical = 0
 columns = 6
 
-[node name="slot" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot2" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="objetos_movibles" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles/slot" instance=ExtResource("2_xib3d")]
+layout_mode = 2
+
+[node name="slot2" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot3" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="objetos_movibles2" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles/slot2" instance=ExtResource("2_xib3d")]
+layout_mode = 2
+
+[node name="slot3" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot4" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot4" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot5" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot5" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot6" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot6" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot7" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot7" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot8" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot8" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot9" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot9" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot10" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot10" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot11" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot11" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot12" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot12" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot13" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot13" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot14" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot14" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot15" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot15" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot16" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot16" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot17" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot17" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot18" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot18" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot19" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot19" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot20" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot20" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot21" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot21" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles" groups=["paneles"]]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot22" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot22" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot23" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot23" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot24" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot24" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot25" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot25" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot26" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot26" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot27" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot27" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot28" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot28" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot29" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot29" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot30" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot30" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot31" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot31" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot32" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot32" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot33" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot33" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot34" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot34" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot35" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot35" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot36" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/movibles"]
+[node name="slot36" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/movibles"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="inmovible" type="GridContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="inmovible" type="GridContainer" parent="inventario/MarginContainer/VBoxContainer/grillas"]
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 0
 columns = 6
 
-[node name="slot" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot2" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot2" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot3" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot3" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot4" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot4" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot5" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot5" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot6" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot6" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot7" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot7" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot8" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot8" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot9" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot9" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot10" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot10" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot11" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot11" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot12" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot12" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot13" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot13" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot14" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot14" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot15" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot15" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot16" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot16" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot17" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot17" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot18" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot18" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot19" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot19" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot20" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot20" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot21" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot21" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot22" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot22" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot23" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot23" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot24" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot24" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot25" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot25" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot26" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot26" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot27" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot27" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot28" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot28" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot29" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot29" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot30" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot30" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot31" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot31" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot32" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot32" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot33" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot33" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot34" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot34" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot35" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot35" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="slot36" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/HBoxContainer/inmovible"]
+[node name="slot36" type="PanelContainer" parent="inventario/MarginContainer/VBoxContainer/grillas/inmovible"]
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2

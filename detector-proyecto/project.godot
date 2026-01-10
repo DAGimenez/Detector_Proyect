@@ -15,6 +15,11 @@ run/main_scene="uid://c6c6hp2pisqlr"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [input]
 
 vi_left={
