@@ -1,0 +1,500 @@
+[gd_scene load_steps=8 format=3 uid="uid://ngu7eo3niwwn"]
+
+[ext_resource type="Script" uid="uid://b4unq0ydm8b4f" path="res://Escenas/ui/control_interfaz.gd" id="1_2ht8w"]
+[ext_resource type="Texture2D" uid="uid://ybep527vmggx" path="res://Escenas/ui/WhatsApp Image 2026-01-27 at 12.23.54.jpeg" id="1_75j14"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75j14"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.45840496, 0.45840508, 0.45840478, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ht8w"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.45882353, 0.45882353, 0.45882353, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i8k53"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85ik1"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.45882353, 0.45882353, 0.45882353, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3homq"]
+
+[node name="UI" type="Node2D"]
+
+[node name="control_Interfaz" type="CanvasLayer" parent="."]
+script = ExtResource("1_2ht8w")
+
+[node name="Control" type="Control" parent="control_Interfaz"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="menu" type="Control" parent="control_Interfaz/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 515.0
+offset_top = 48.0
+offset_right = -342.0
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="control_Interfaz/Control/menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="control_Interfaz/Control/menu/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="TextureRect" type="TextureRect" parent="control_Interfaz/Control/menu/PanelContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_75j14")
+expand_mode = 1
+
+[node name="misiones_mapa" type="Control" parent="control_Interfaz/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 477.0
+offset_top = 90.0
+offset_right = -380.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="control_Interfaz/Control/misiones_mapa"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="control_Interfaz/Control/misiones_mapa/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="TextureRect" type="TextureRect" parent="control_Interfaz/Control/misiones_mapa/PanelContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_75j14")
+expand_mode = 1
+
+[node name="mochila" type="Control" parent="control_Interfaz/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 439.0
+offset_top = 133.0
+offset_right = -418.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="control_Interfaz/Control/mochila"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="control_Interfaz/Control/mochila/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="TextureRect" type="TextureRect" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_75j14")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 74
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_75j14")
+
+[node name="Label" type="Label" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.12156863, 0, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 28
+text = "MOCHILA"
+horizontal_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_2ht8w")
+
+[node name="Label" type="Label" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.12156863, 0, 0.5686275, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 25
+text = "Usables"
+horizontal_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 175)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_i8k53")
+
+[node name="MarginContainer" type="MarginContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 2
+
+[node name="GridContainer" type="GridContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+columns = 8
+
+[node name="slot" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot2" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot3" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot4" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot5" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot6" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot7" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot8" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot9" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot10" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot11" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot12" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot13" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot14" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot15" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot16" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot17" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot18" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot19" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot20" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot21" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot22" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot23" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot24" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot25" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot26" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot27" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot28" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot29" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot30" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot31" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot32" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer/GridContainer"]
+visible = false
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="PanelContainer4" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_85ik1")
+
+[node name="Label" type="Label" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer4"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.12156863, 0, 0.5686275, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 25
+text = "Desenterados"
+horizontal_alignment = 1
+
+[node name="PanelContainer5" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 175)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_3homq")
+
+[node name="MarginContainer" type="MarginContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 5
+
+[node name="GridContainer" type="GridContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+columns = 8
+
+[node name="slot" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot2" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot3" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot4" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot5" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot6" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot7" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot8" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot9" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot10" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot11" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot12" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot13" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot14" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot15" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot16" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot17" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot18" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot19" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot20" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot21" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot22" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot23" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot24" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot25" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot26" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot27" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot28" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot29" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot30" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot31" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
+
+[node name="slot32" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(38, 40)
+layout_mode = 2
