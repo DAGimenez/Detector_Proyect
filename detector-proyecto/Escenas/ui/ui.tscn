@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ngu7eo3niwwn"]
+[gd_scene load_steps=9 format=3 uid="uid://ngu7eo3niwwn"]
 
 [ext_resource type="Script" uid="uid://b4unq0ydm8b4f" path="res://Escenas/ui/control_interfaz.gd" id="1_2ht8w"]
 [ext_resource type="Texture2D" uid="uid://ybep527vmggx" path="res://Escenas/ui/WhatsApp Image 2026-01-27 at 12.23.54.jpeg" id="1_75j14"]
+[ext_resource type="Texture2D" uid="uid://cgbn3psjyemuc" path="res://icon.svg" id="3_i8k53"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75j14"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -498,3 +499,7 @@ layout_mode = 2
 [node name="slot32" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(379, 198)
+texture = ExtResource("3_i8k53")
