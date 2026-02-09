@@ -1,8 +1,10 @@
 extends TextureRect
 
 
+func _ready() -> void:
+	colocarse_en_panel_mas_cercano()
 func colocarse_en_panel_mas_cercano():
-	var panels := get_tree().get_nodes_in_group("paneles")
+	var panels := get_tree().get_nodes_in_group("objetos_inmovibles")
 	var mas_cercano : PanelContainer = null
 	var distancia_min := INF
 

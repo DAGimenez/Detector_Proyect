@@ -381,131 +381,131 @@ theme_override_constants/h_separation = 3
 theme_override_constants/v_separation = 3
 columns = 8
 
-[node name="slot" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot2" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot2" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot3" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot3" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot4" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot4" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot5" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot5" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot6" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot6" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot7" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot7" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot8" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot8" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot9" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot9" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot10" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot10" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot11" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot11" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot12" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot12" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot13" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot13" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot14" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot14" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot15" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot15" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot16" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot16" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot17" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot17" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot18" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot18" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot19" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot19" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot20" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot20" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot21" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot21" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot22" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot22" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot23" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot23" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot24" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot24" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot25" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot25" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot26" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot26" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot27" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot27" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot28" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot28" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot29" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot29" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot30" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot30" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot31" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot31" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
-[node name="slot32" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados"]
+[node name="slot32" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/objetos_desenterados/MarginContainer/Grid_desenterados" groups=["objetos_inmovibles"]]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
 
