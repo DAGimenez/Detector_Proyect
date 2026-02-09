@@ -109,6 +109,10 @@ layout_mode = 2
 texture = ExtResource("1_75j14")
 expand_mode = 1
 
+[node name="Icon" type="Sprite2D" parent="control_Interfaz/Control/misiones_mapa"]
+position = Vector2(95, 117)
+texture = ExtResource("3_i8k53")
+
 [node name="mochila" type="Control" parent="control_Interfaz/Control"]
 layout_mode = 1
 anchors_preset = 15
@@ -499,7 +503,3 @@ layout_mode = 2
 [node name="slot32" type="PanelContainer" parent="control_Interfaz/Control/mochila/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/PanelContainer5/MarginContainer/GridContainer"]
 custom_minimum_size = Vector2(38, 40)
 layout_mode = 2
-
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(379, 198)
-texture = ExtResource("3_i8k53")
