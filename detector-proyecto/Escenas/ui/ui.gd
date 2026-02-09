@@ -16,7 +16,20 @@ func _input(event: InputEvent) -> void:
 
 
 func recolectar_objetos(objeto: Resource):
-	var new_objeto_inmovible = objetos_inmovible.instantiate()
-	new_objeto_inmovible.texture = objeto.sprite
-	new_objeto_inmovible.position = objetos_desenterados.position
-	grid_desenterados.add_child(new_objeto_inmovible)
+	for slot in grid_desenterados.get_children():
+		if slot.get_child_count() > 0:
+			var objeto_existente = slot.get_child(0)
+			if objeto_existente.get("recurso_del_objeto") == objeto:
+				if objeto_existente.has_method("actualizar_cantidad"):
+					objeto_existente.actualizar_cantidad(1)
+				return
+	
+	for slot in grid_desenterados.get_children():
+		if slot.get_child_count() == 0:
+			var new_objeto = objetos_inmovible.instantiate()
+			
+			new_objeto.texture = objeto.sprite
+			new_objeto.recurso_del_objeto = objeto
+	
+			slot.add_child(new_objeto)
+			return
