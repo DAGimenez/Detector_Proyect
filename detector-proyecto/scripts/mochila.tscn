@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3hreut0xuaj7"]
+
+[ext_resource type="Script" uid="uid://cue5fnxwv7jbk" path="res://scripts/mochila.gd" id="1_0u53d"]
+
+[node name="Mochila" type="Node2D"]
+script = ExtResource("1_0u53d")

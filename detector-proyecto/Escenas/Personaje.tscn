@@ -1,15 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6c6hp2pisqlr"]
+[gd_scene load_steps=5 format=3 uid="uid://c6c6hp2pisqlr"]
 
 [ext_resource type="Script" uid="uid://cesjayvjd4job" path="res://Personaje.gd" id="1_48aib"]
 [ext_resource type="Texture2D" uid="uid://cgbn3psjyemuc" path="res://icon.svg" id="2_47rpa"]
+[ext_resource type="Resource" uid="uid://cf720de46clnr" path="res://recursos/collar.tres" id="2_tk1jt"]
+[ext_resource type="Script" uid="uid://cue5fnxwv7jbk" path="res://scripts/mochila.gd" id="4_fj443"]
 
 [node name="Personaje" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(72, 95)
 script = ExtResource("1_48aib")
+objetoprueba = ExtResource("2_tk1jt")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 texture = ExtResource("2_47rpa")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="Mochila" type="Node2D" parent="CharacterBody2D"]
+script = ExtResource("4_fj443")
+metadata/_custom_type_script = "uid://cue5fnxwv7jbk"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Objetores" load_steps=3 format=3 uid="uid://cf720de46clnr"]
+
+[ext_resource type="Script" uid="uid://co1cyc1vpflu8" path="res://Objetores.gd" id="1_briow"]
+[ext_resource type="Texture2D" uid="uid://cgbn3psjyemuc" path="res://icon.svg" id="2_kxlcl"]
+
+[resource]
+script = ExtResource("1_briow")
+valor = 20
+nombre = "collar"
+sprite = ExtResource("2_kxlcl")
+metadata/_custom_type_script = "uid://co1cyc1vpflu8"

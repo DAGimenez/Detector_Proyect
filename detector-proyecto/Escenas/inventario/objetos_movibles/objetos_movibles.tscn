@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmgu7ey3ebwlr"]
+
+[ext_resource type="Texture2D" uid="uid://cgbn3psjyemuc" path="res://icon.svg" id="1_unqxk"]
+[ext_resource type="Script" uid="uid://bakyqhui6y56y" path="res://Escenas/inventario/objetos_movibles/objetos_movibles.gd" id="2_7lej2"]
+
+[node name="objetos_movibles" type="TextureRect"]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_unqxk")
+expand_mode = 1
+script = ExtResource("2_7lej2")
