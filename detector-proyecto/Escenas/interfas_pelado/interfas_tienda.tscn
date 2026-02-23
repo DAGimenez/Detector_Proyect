@@ -6,7 +6,7 @@
 [node name="interfas_tienda" type="CanvasLayer"]
 script = ExtResource("1_c6tn6")
 
-[node name="pestaña_venta" type="Control" parent="."]
+[node name="pestaña_compra" type="Control" parent="."]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -14,47 +14,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="pestaña_venta"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="pestaña_venta/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="PanelContainer" type="PanelContainer" parent="pestaña_venta/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(700, 500)
-layout_mode = 2
-
-[node name="Label" type="Label" parent="pestaña_venta/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(500, 300)
-layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 6
-horizontal_alignment = 1
-autowrap_mode = 3
-
-[node name="LineEdit" type="LineEdit" parent="pestaña_venta/VBoxContainer"]
-custom_minimum_size = Vector2(900, 110)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-placeholder_text = "Escribe aquí para negociar..."
-max_length = 100
-
-[node name="pestaña_compra" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("2_xqcqb")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="pestaña_compra"]
 layout_mode = 1
@@ -80,10 +39,61 @@ size_flags_vertical = 6
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="pestaña_compra/VBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="pestaña_compra/VBoxContainer"]
+custom_minimum_size = Vector2(900, 110)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+placeholder_text = "Escribe aquí para negociar..."
+max_length = 100
+
+[node name="pestaña_venta" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_xqcqb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="pestaña_venta"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="pestaña_venta/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="pestaña_venta/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="pestaña_venta/VBoxContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 10
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="total" type="Label" parent="pestaña_venta/VBoxContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="pestaña_venta/VBoxContainer"]
 layout_mode = 2
 
-[node name="1" type="Button" parent="pestaña_compra/VBoxContainer/HBoxContainer2"]
+[node name="1" type="Button" parent="pestaña_venta/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(300, 200)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -91,7 +101,7 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 30
 text = "Dame mas"
 
-[node name="2" type="Button" parent="pestaña_compra/VBoxContainer/HBoxContainer2"]
+[node name="2" type="Button" parent="pestaña_venta/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(300, 200)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -99,7 +109,7 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 30
 text = "Dame un poco más"
 
-[node name="3" type="Button" parent="pestaña_compra/VBoxContainer/HBoxContainer2"]
+[node name="3" type="Button" parent="pestaña_venta/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(300, 200)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -108,7 +118,6 @@ theme_override_font_sizes/font_size = 30
 text = "Si, te lo vendo"
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
-visible = false
 custom_minimum_size = Vector2(500, 300)
 anchors_preset = 8
 anchor_left = 0.5
@@ -158,5 +167,7 @@ theme_override_font_sizes/font_size = 20
 text = "ventas
 "
 
+[connection signal="button_down" from="pestaña_venta/VBoxContainer/HBoxContainer2/1" to="pestaña_venta" method="_on__button_down"]
 [connection signal="button_down" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/compra" to="." method="_on_compra_button_down"]
 [connection signal="button_down" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/venta" to="." method="_on_venta_button_down"]
+[connection signal="button_down" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/venta" to="pestaña_venta" method="_on_venta_button_down"]
