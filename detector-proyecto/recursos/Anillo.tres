@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Objetores" load_steps=2 format=3 uid="uid://dtlyg3hwrxi86"]
+
+[ext_resource type="Script" uid="uid://co1cyc1vpflu8" path="res://Objetores.gd" id="1_5jgkq"]
+
+[resource]
+script = ExtResource("1_5jgkq")
+valor = 2
+nombre = "anillo"
+peso_spawn = 10.0
+metadata/_custom_type_script = "uid://co1cyc1vpflu8"

@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://die70nskfae7y"]
+[gd_scene load_steps=7 format=3 uid="uid://die70nskfae7y"]
 
 [ext_resource type="Texture2D" uid="uid://d3am7fkxav3ay" path="res://Imagenes/9b2ba700-d8db-4a90-9e35-aebdd1968139.png" id="1_b8m72"]
 [ext_resource type="PackedScene" uid="uid://c6c6hp2pisqlr" path="res://Escenas/Personaje.tscn" id="2_217so"]
+[ext_resource type="PackedScene" uid="uid://cjycjymryyt4" path="res://Escenas/spawner_playa.tscn" id="3_ckjxr"]
+[ext_resource type="Script" uid="uid://co1cyc1vpflu8" path="res://Objetores.gd" id="4_xou3v"]
+[ext_resource type="Resource" uid="uid://dtlyg3hwrxi86" path="res://recursos/Anillo.tres" id="5_bypdb"]
+[ext_resource type="Resource" uid="uid://cf720de46clnr" path="res://recursos/collar.tres" id="6_lfmtk"]
 
 [node name="Provincia_1" type="Control"]
 layout_mode = 3
@@ -17,3 +21,6 @@ scale = Vector2(0.7496116, 0.6611012)
 texture = ExtResource("1_b8m72")
 
 [node name="Node2D" parent="." instance=ExtResource("2_217so")]
+
+[node name="spawner_playa" parent="." instance=ExtResource("3_ckjxr")]
+objetos_posibles = Array[ExtResource("4_xou3v")]([ExtResource("5_bypdb"), ExtResource("6_lfmtk")])

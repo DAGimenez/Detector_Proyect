@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjycjymryyt4"]
+
+[ext_resource type="Script" uid="uid://bfn235qhqvt0t" path="res://Escenas/spawner_playa.gd" id="1_us3mu"]
+
+[node name="spawner_playa" type="Node2D"]
+script = ExtResource("1_us3mu")
