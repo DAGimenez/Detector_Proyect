@@ -5,6 +5,7 @@ var SPEED = 300.0
 @export var objetoprueba : Objetores #declaramos a objetosres, nas que nada para la prueba y testeo
 @onready var mochila :  Mochila = $Mochila # declaracion de la mochila dentro del jugador
 func _ready():
+	add_to_group("player")
 	if objetoprueba:
 		mochila.agregar(objetoprueba)
 		print("objeto recogido")

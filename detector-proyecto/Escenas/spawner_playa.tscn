@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjycjymryyt4"]
+[gd_scene load_steps=6 format=3 uid="uid://cjycjymryyt4"]
 
 [ext_resource type="Script" uid="uid://bfn235qhqvt0t" path="res://Escenas/spawner_playa.gd" id="1_us3mu"]
+[ext_resource type="Script" uid="uid://co1cyc1vpflu8" path="res://Objetores.gd" id="2_h0irc"]
+[ext_resource type="Resource" uid="uid://cf720de46clnr" path="res://recursos/collar.tres" id="3_qyjcv"]
+[ext_resource type="Resource" uid="uid://dtlyg3hwrxi86" path="res://recursos/Anillo.tres" id="4_8scsv"]
+[ext_resource type="PackedScene" uid="uid://drjpfutdaipk8" path="res://scripts/objeto_enterrado.tscn" id="5_xuan3"]
 
 [node name="spawner_playa" type="Node2D"]
 script = ExtResource("1_us3mu")
+objetos_posibles = Array[ExtResource("2_h0irc")]([ExtResource("3_qyjcv"), ExtResource("4_8scsv")])
+objeto_escena = ExtResource("5_xuan3")

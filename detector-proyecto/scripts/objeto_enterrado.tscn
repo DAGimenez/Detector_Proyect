@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://drjpfutdaipk8"]
+
+[ext_resource type="Script" uid="uid://j1jnaf034kig" path="res://scripts/objeto_enterrado.gd" id="1_uj5o1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uj5o1"]
+radius = 38.013157
+
+[node name="objeto_enterrado" type="Area2D"]
+script = ExtResource("1_uj5o1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uj5o1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
