@@ -1,19 +1,67 @@
-[gd_scene load_steps=3 format=3 uid="uid://drud3e3mpn0tj"]
+[gd_scene load_steps=4 format=3 uid="uid://drud3e3mpn0tj"]
 
 [ext_resource type="Script" uid="uid://brxr7meprn4r0" path="res://Escenas/interfas_pelado/interfas_tienda.gd" id="1_c6tn6"]
 [ext_resource type="Script" uid="uid://d147nui3wgu5r" path="res://Escenas/interfas_pelado/pestaña_compra.gd" id="2_xqcqb"]
+
+[sub_resource type="GDScript" id="GDScript_xqcqb"]
+script/source = "extends Control
+
+@onready var label: Label = $VBoxContainer/HBoxContainer/VBoxContainer/Label
+@onready var total: Label = $VBoxContainer/HBoxContainer/VBoxContainer/total
+
+
+var productos : Dictionary = {
+	\"tapa\": 5.00,
+	\"Colgantes de plata\" : 30.00,
+	\"Pedazo de chapa chico\": 10.00,
+	\"Goma de auto\": 50.00,
+	\"Cajita de balas usadas\": 15.00,
+	\"Granada descompuesta\": 90.00,
+	\"Bolsa de tornillos\": 20.00
+}
+
+var objetos_seleccionados : Array =[]
+var precio : float = 0
+func _on_venta_button_down() -> void:
+	objetos_seleccionados.clear()
+	var llaves = productos.keys()
+	llaves.shuffle()
+	
+	var texto_final : String = \"Me interesan estos productos:\\n\"
+	var suma_base : float = 0.0
+
+	for i in range(3):
+		var nombre_item = llaves[i]
+		var precio_item = productos[nombre_item]
+		objetos_seleccionados.append({\"nombre\": nombre_item, \"precio\": precio_item})
+		suma_base += precio_item
+		texto_final += nombre_item + \": $\" + str(precio_item) + \"\\n\"
+	
+	var precio_total = suma_base * 1.30
+	total.text = \"\\n-----------------------\\n\"
+	total.text += \"Te ofresco : $\" + str(precio_total)
+	precio = precio_total 
+	label.text = texto_final
+
+
+func _on__button_down() -> void:
+	precio = precio * 1.30
+	total.text = \"\\n-----------------------\\n\"
+	total.text += \"Te ofresco : $\" + str(precio)
+	$\"..\".simpatia -= 5
+"
 
 [node name="interfas_tienda" type="CanvasLayer"]
 script = ExtResource("1_c6tn6")
 
 [node name="pestaña_compra" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("2_xqcqb")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="pestaña_compra"]
 layout_mode = 1
@@ -31,7 +79,15 @@ size_flags_vertical = 3
 custom_minimum_size = Vector2(700, 500)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="pestaña_compra/VBoxContainer/HBoxContainer"]
+[node name="Button" type="Button" parent="pestaña_compra/VBoxContainer/HBoxContainer/PanelContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 25
+text = "COMPRAR"
+
+[node name="text_compra" type="Label" parent="pestaña_compra/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(500, 300)
 layout_mode = 2
 size_flags_horizontal = 10
@@ -55,7 +111,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("2_xqcqb")
+script = SubResource("GDScript_xqcqb")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="pestaña_venta"]
 layout_mode = 1
@@ -118,6 +174,7 @@ theme_override_font_sizes/font_size = 30
 text = "Si, te lo vendo"
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
+visible = false
 custom_minimum_size = Vector2(500, 300)
 anchors_preset = 8
 anchor_left = 0.5
@@ -167,6 +224,7 @@ theme_override_font_sizes/font_size = 20
 text = "ventas
 "
 
+[connection signal="text_submitted" from="pestaña_compra/VBoxContainer/LineEdit" to="pestaña_compra" method="_on_line_edit_text_submitted"]
 [connection signal="button_down" from="pestaña_venta/VBoxContainer/HBoxContainer2/1" to="pestaña_venta" method="_on__button_down"]
 [connection signal="button_down" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/compra" to="." method="_on_compra_button_down"]
 [connection signal="button_down" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/venta" to="." method="_on_venta_button_down"]
