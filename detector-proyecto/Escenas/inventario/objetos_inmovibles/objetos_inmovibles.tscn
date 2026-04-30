@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://cidjy0vseyess"]
+[gd_scene load_steps=2 format=3 uid="uid://cidjy0vseyess"]
 
-[ext_resource type="Texture2D" uid="uid://cgbn3psjyemuc" path="res://icon.svg" id="1_2t346"]
 [ext_resource type="Script" uid="uid://b4vdtrbcrvwp3" path="res://Escenas/inventario/objetos_inmovibles/objetos_inmovibles.gd" id="1_w6nu3"]
 
 [node name="objetos_inmovibles" type="TextureRect"]
@@ -8,6 +7,13 @@ custom_minimum_size = Vector2(40, 40)
 offset_right = 40.0
 offset_bottom = 40.0
 pivot_offset = Vector2(191, 147)
-texture = ExtResource("1_2t346")
 expand_mode = 1
 script = ExtResource("1_w6nu3")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 0
+offset_left = 22.0
+offset_top = 18.0
+offset_right = 62.0
+offset_bottom = 41.0
