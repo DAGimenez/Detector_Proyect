@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Objetores" load_steps=3 format=3 uid="uid://dtlyg3hwrxi86"]
+
+[ext_resource type="Script" uid="uid://co1cyc1vpflu8" path="res://Objetores.gd" id="1_5jgkq"]
+[ext_resource type="Texture2D" uid="uid://dh7ci40qo5bt7" path="res://Imagenes/png-transparent-pixel-art-ring-for-game.png" id="2_d4wcn"]
+
+[resource]
+script = ExtResource("1_5jgkq")
+valor = 2
+nombre = "anillo"
+sprite = ExtResource("2_d4wcn")
+metadata/_custom_type_script = "uid://co1cyc1vpflu8"
